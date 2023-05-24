@@ -1,0 +1,110 @@
+//scss mixin
+@mixin width-margin-cntr{
+    max-width: 1326px;
+    margin: auto;
+}
+@mixin flexbox-property-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin flexbox-property-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexbox-property-3{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexbox-property-4{
+    display: flex;
+    justify-content: space-around;
+}
+@mixin flexbox-property-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexbox-proerty-6{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 3.5rem;
+}
+@mixin flexbox-property-7{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+@mixin flexbox-property-8{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@mixin flexbox-property-9{
+    display: flex;
+          align-items: center;
+}
+@mixin flexbox-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+@mixin nav-right{
+    display: flex;
+    padding: 0.5rem;
+}
+@mixin intro-section{
+    display: flex;
+    padding: 20rem 6rem;
+}
+@mixin intro-buttons{
+    border: 1px solid $font-span-color;
+    outline: none;
+    background-color: transparent;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: $font-span-color;
+    cursor: pointer; 
+    border-radius: 1rem;
+}
+@mixin intro-btn-a{
+    border: 1px solid $font-span-color;
+    background-color: transparent;
+    padding: 1.1rem 2rem;
+    font-size: 1.5rem;
+    color: $font-span-color;
+    border-radius: 1rem;
+}
+@mixin project-btn{
+    border: 1px solid $font-span-color;
+    color: $font-span-color;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    transition: 0.8s;
+}
+@mixin cnt-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    background-color: $about-sec-theme;
+    color: $font-theme-color;
+}
+@mixin cnt-btn{
+    background-color: $about-sec-theme;
+    color: $font-theme-color;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}

@@ -1,0 +1,31 @@
+.about-sec{
+    background-color: $about-sec-theme;
+    .abt-flex-col{
+        @include intro-section;
+        @include width-margin-cntr;
+        @include flexbox-proerty-6;
+    color: $font-theme-color;
+    cursor: default;
+    img{
+        width: 100%;
+    }
+    .right-sec{
+        width:50%;
+    }
+    h1{
+        font-size: 3rem;
+    span{
+        color: $font-span-color;
+    }
+    }
+    .rt-hlt-para1{
+        font-size: 1.6rem;
+    }
+    .rt-hlt-para2{
+        // text-align: justify;
+        line-height: 1.8rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+    }  
+}

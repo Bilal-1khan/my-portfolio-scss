@@ -1,0 +1,36 @@
+.footer{
+    padding: 2rem 6rem;
+    background-color: $background-color;
+    .flex-fotr{
+        @include flexbox-property-5;
+        @include width-margin-cntr;
+        flex-wrap: wrap-reverse;
+        .lft-fotr{
+            font-size: 1.5rem;
+            letter-spacing: 0.02rem;
+            color: $font-theme-color;
+            cursor: default;
+            text-align: center;
+            span{
+                color: $font-span-color;
+            }
+        }
+        .rt-fotr{
+            border: 0.09rem solid $font-span-color;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            &:hover{
+                box-shadow: 0px 0px 0.2rem 0.1rem $font-span-color;
+            }
+            a{
+                padding: 1rem;
+                display: block;
+                color: $font-span-color;
+                i{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}

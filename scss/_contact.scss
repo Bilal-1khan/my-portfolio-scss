@@ -1,0 +1,122 @@
+.contact-sec {
+  background-color: $about-sec-theme;
+  .cnt-flex {
+    padding: 20rem 6rem;
+    .top-cnt-sec {
+      text-align: center;
+      h1 {
+        font-size: 3rem;
+        color: $font-theme-color;
+        span {
+          color: $font-span-color;
+        }
+      }
+      .cnt-sub-h {
+        font-size: 1.5rem;
+        color: $font-theme-color;
+      }
+    }
+    .flex-cnt-sec {
+      @include width-margin-cntr;
+      @include flexbox-property-8;
+      padding: 6rem 5rem;
+      .left-cnt {
+        @include flexbox-property-3;
+        flex: 2;
+        h3 {
+          color: $font-theme-color;
+          font-size: 1.5rem;
+          margin-bottom: 2.5rem;
+        }
+        .cnt-info {
+          @include flexbox-property-9;
+          gap: 2.2rem;
+          margin: 1rem 0px;
+          .icon-lft {
+            border: 0.1rem solid $font-span-color;
+            border-radius: 1rem;
+            box-shadow: 0px 0px 0.2rem 0.1rem $font-span-color;
+            i {
+              font-size: 20px;
+              padding: 2rem;
+              color: $font-span-color;
+            }
+            .fa-phone {
+              padding: 2rem 2.19rem;
+            }
+            .fa-map-marker {
+              padding: 2rem 2.4rem;
+            }
+          }
+          .icon-rt {
+            font-size: 1.4rem;
+            color: $font-theme-color;
+          }
+        }
+        .scl-links{
+          padding-top:15rem ;
+            h3{
+              margin-left: 1.2rem;
+              letter-spacing: 0.15rem;
+            }
+          
+          ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+              border: 0.09rem solid $font-span-color;
+              border-radius: 1rem;
+              margin-left: 1rem;
+              a{
+                display: block;
+                padding: 2rem 2.2rem;
+                border-radius: 1rem;
+                color: $font-span-color;
+                transition: 0.9s ease;
+                &:hover{
+                  box-shadow: 0px 0px 0.3rem 0.2rem $font-span-color;
+                }
+                i{
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .flex-cnt-rt {
+      background-color: $background-color;
+      border-radius: 2rem;
+      flex: 3;
+      form {
+        padding: 5rem 3rem;
+        input {
+          @include cnt-input;
+          margin: 1.2rem 0px;
+          &:focus {
+            box-shadow: 0px 0px 0.2rem 0.2rem $font-span-color;
+          }
+        }
+        textarea {
+          resize: none;
+          @include cnt-input;
+          margin-top: 1.2rem;
+          &:focus {
+            box-shadow: 0px 0px 0.1rem 0.2rem $font-span-color;
+          }
+        }
+        .frm-btn {
+          @include cnt-btn;
+          width: 100%;
+          margin-top: 2rem;
+          transition: 0.8s;
+          &:hover {
+            border: 0.1rem solid $font-span-color;
+            color: $font-span-color;
+          }
+        }
+      }
+    }
+  }
+}
