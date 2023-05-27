@@ -87,3 +87,19 @@
             padding: 5rem 2rem;
         }
 }
+@media screen and (max-width:246px) {
+    #social-icons-links{
+        flex-wrap: wrap;
+        li{
+            margin: 0.2rem;
+        }
+    }
+}
+@media screen and (max-width:360px) {
+    .header{
+        padding: 1rem 1rem;   
+    #NavLeft a{
+        margin-left: 0px;
+    }
+    }
+}

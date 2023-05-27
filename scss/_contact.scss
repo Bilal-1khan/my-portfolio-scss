@@ -55,6 +55,7 @@
         }
         .scl-links{
           padding-top:15rem ;
+          margin-right: 0.5rem;
             h3{
               margin-left: 1.2rem;
               letter-spacing: 0.15rem;
@@ -62,7 +63,6 @@
           
           ul{
             display: flex;
-            flex-wrap: wrap;
             li{
               border: 0.09rem solid $font-span-color;
               border-radius: 1rem;
@@ -77,7 +77,7 @@
                   box-shadow: 0px 0px 0.3rem 0.2rem $font-span-color;
                 }
                 i{
-                  font-size: 2rem;
+                  font-size: 2.5rem;
                 }
               }
             }
