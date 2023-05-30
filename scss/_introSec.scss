@@ -1,51 +1,54 @@
-.flex-intro-sec{
-   @include intro-section;
-   @include width-margin-cntr;
-   flex-wrap: wrap;
-   color: $font-theme-color;
-   .left-sec{
+.intro-container{
+  background-color:$background-color ;  
+.flex-intro-sec {
+  @include intro-section;
+  @include width-margin-cntr;
+  flex-wrap: wrap;
+  color: $font-theme-color;
+  .left-sec {
     cursor: default;
     line-height: 7rem;
     flex: 2;
-   }
-   p{
+  }
+  p {
     font-size: 2rem;
-   }
-   h1{
+  }
+  h1 {
     font-size: 5rem;
-    span{
-        color: $font-span-color;
+    span {
+      color: $font-span-color;
     }
-   }
-   h2{
+  }
+  h2 {
     font-size: 2.6rem;
-   }
-   span{
+  }
+  span {
     color: $font-span-color;
-   }
-   button{
-    @include intro-buttons;
+  }
+
+  .intro-btn {
+    @include intro-btn-a;
     transition: 0.8s;
-    &:hover{
-        background-color: $font-span-color;
-        color: $font-theme-color;
+    &:hover {
+      background-color: $font-span-color;
+      color: $font-theme-color;
     }
-   }
-   a{
-    @include  intro-btn-a;
-    transition: 0.8s;
-    &:hover{
-        background-color: $font-span-color;
-        color: $font-theme-color;
-    }
-}
-   .my-resume{
+  }
+  .my-cv {
+    @include intro-btn-cv-a;
     margin-right: 1.5rem;
-   }
-   .right-img-sec{
-    flex: 1;
-    img{
-        width: 100%;
+    transition: 0.8s;
+    &:hover {
+      background-color: $font-span-color;
+      color: $font-theme-color;
     }
-   }
+  }
+  .right-img-sec {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 }

@@ -1,46 +1,57 @@
-.header {
-  display: flex;
-  align-items: center;
+.header-container {
   width: 100%;
-  padding: 1rem 2rem;
   position: fixed;
   z-index: 10;
   left: 0;
   top: 0;
   background-color: rgb(31, 30, 30);
 }
-.header a {
+.header-container .header-width-col {
+  max-width: 1326px;
+  margin: auto;
+}
+.header-container .header-width-col .header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: rgb(31, 30, 30);
+}
+.header-container .header-width-col .header a {
   color: #fff;
   transition: 0.5s;
 }
-.header a:hover {
+.header-container .header-width-col .header a:hover {
   color: rgb(88, 221, 221);
 }
-.header .nav-col-lft {
+.header-container .header-width-col .header .nav-col-lft {
   flex: 4;
   font-size: 3rem;
 }
-.header .nav-col-lft a {
+.header-container .header-width-col .header .nav-col-lft a {
   margin-left: 1rem;
 }
-.header .nav-col-rt {
+.header-container .header-width-col .header .nav-col-rt {
   flex: 2;
   font-size: 1.8rem;
 }
-.header .nav-col-rt .active {
+.header-container .header-width-col .header .nav-col-rt .active {
   color: rgb(88, 221, 221);
 }
-.header .nav-col-rt ul {
+.header-container .header-width-col .header .nav-col-rt ul {
   display: flex;
 }
-.header .nav-col-rt ul li {
+.header-container .header-width-col .header .nav-col-rt ul li {
   margin: 0px 1rem;
 }
-.header .nav-col-rt ul li a {
+.header-container .header-width-col .header .nav-col-rt ul li a {
   padding: 1rem 0.5rem;
 }
 
-.flex-intro-sec {
+.intro-container {
+  background-color: rgb(31, 30, 30);
+}
+.intro-container .flex-intro-sec {
   display: flex;
   padding: 20rem 6rem;
   max-width: 1326px;
@@ -48,42 +59,27 @@
   flex-wrap: wrap;
   color: #fff;
 }
-.flex-intro-sec .left-sec {
+.intro-container .flex-intro-sec .left-sec {
   cursor: default;
   line-height: 7rem;
   flex: 2;
 }
-.flex-intro-sec p {
+.intro-container .flex-intro-sec p {
   font-size: 2rem;
 }
-.flex-intro-sec h1 {
+.intro-container .flex-intro-sec h1 {
   font-size: 5rem;
 }
-.flex-intro-sec h1 span {
+.intro-container .flex-intro-sec h1 span {
   color: rgb(88, 221, 221);
 }
-.flex-intro-sec h2 {
+.intro-container .flex-intro-sec h2 {
   font-size: 2.6rem;
 }
-.flex-intro-sec span {
+.intro-container .flex-intro-sec span {
   color: rgb(88, 221, 221);
 }
-.flex-intro-sec button {
-  border: 1px solid rgb(88, 221, 221);
-  outline: none;
-  background-color: transparent;
-  padding: 1rem;
-  font-size: 1.5rem;
-  color: rgb(88, 221, 221);
-  cursor: pointer;
-  border-radius: 1rem;
-  transition: 0.8s;
-}
-.flex-intro-sec button:hover {
-  background-color: rgb(88, 221, 221);
-  color: #fff;
-}
-.flex-intro-sec a {
+.intro-container .flex-intro-sec .intro-btn {
   border: 1px solid rgb(88, 221, 221);
   background-color: transparent;
   padding: 1.1rem 2rem;
@@ -92,17 +88,28 @@
   border-radius: 1rem;
   transition: 0.8s;
 }
-.flex-intro-sec a:hover {
+.intro-container .flex-intro-sec .intro-btn:hover {
   background-color: rgb(88, 221, 221);
   color: #fff;
 }
-.flex-intro-sec .my-resume {
+.intro-container .flex-intro-sec .my-cv {
+  border: 1px solid rgb(88, 221, 221);
+  background-color: transparent;
+  padding: 1.1rem 1.2rem;
+  font-size: 1.5rem;
+  color: rgb(88, 221, 221);
+  border-radius: 1rem;
   margin-right: 1.5rem;
+  transition: 0.8s;
 }
-.flex-intro-sec .right-img-sec {
+.intro-container .flex-intro-sec .my-cv:hover {
+  background-color: rgb(88, 221, 221);
+  color: #fff;
+}
+.intro-container .flex-intro-sec .right-img-sec {
   flex: 1;
 }
-.flex-intro-sec .right-img-sec img {
+.intro-container .flex-intro-sec .right-img-sec img {
   width: 100%;
 }
 
@@ -337,7 +344,8 @@
   outline: none;
   width: 100%;
   border-radius: 1rem;
-  padding: 1.2rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
   background-color: rgb(39, 39, 39);
   color: #fff;
   margin: 1.2rem 0px;
@@ -351,7 +359,8 @@
   outline: none;
   width: 100%;
   border-radius: 1rem;
-  padding: 1.2rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
   background-color: rgb(39, 39, 39);
   color: #fff;
   margin-top: 1.2rem;
@@ -370,6 +379,7 @@
   width: 100%;
   margin-top: 2rem;
   transition: 0.8s;
+  font-size: 1.5rem;
 }
 .contact-sec .cnt-flex .flex-cnt-rt form .frm-btn:hover {
   border: 0.1rem solid rgb(88, 221, 221);
@@ -532,17 +542,17 @@ html {
 .container {
   background-color: rgb(31, 30, 30);
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 @media screen and (max-width: 998px) {
   html {
-    font-size: 55%;
+    font-size: 56.25%;
   }
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 45%;
+    font-size: 46.25%;
   }
 }
 /* width */

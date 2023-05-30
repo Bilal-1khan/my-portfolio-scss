@@ -51,10 +51,14 @@
     align-items: center;
     width: 100%;
     padding: 1rem 2rem;
+}
+@mixin main-header-con{
+    width: 100%;
     position: fixed;
     z-index: 10;
     left: 0;
     top: 0;
+    background-color:$background-color ;
 }
 @mixin nav-right{
     display: flex;
@@ -82,6 +86,14 @@
     color: $font-span-color;
     border-radius: 1rem;
 }
+@mixin intro-btn-cv-a{
+    border: 1px solid $font-span-color;
+    background-color: transparent;
+    padding: 1.1rem 1.2rem;
+    font-size: 1.5rem;
+    color: $font-span-color;
+    border-radius: 1rem;
+}
 @mixin project-btn{
     border: 1px solid $font-span-color;
     color: $font-span-color;
@@ -95,7 +107,8 @@
     outline: none;
     width: 100%;
     border-radius: 1rem;
-    padding: 1.2rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
     background-color: $about-sec-theme;
     color: $font-theme-color;
 }
@@ -107,4 +120,7 @@
     cursor: pointer;
     border: 1px solid transparent;
     outline: none;
+}
+@mixin resume-section{
+
 }

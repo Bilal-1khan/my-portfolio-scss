@@ -1,34 +1,41 @@
-.header{
-    @include flexbox-header;
-    background-color: $background-color;
-     a{
-        color: #fff;
-        transition: 0.5s;
-        &:hover{
-            color: $hover-color;
-        }
-    }    
-    .nav-col-lft{
-        flex: 4;
-        font-size: 3rem;
-        a{
-            margin-left:1rem ;
-        }      
-    }
-    .nav-col-rt{
-        flex: 2;
-        font-size: 1.8rem;
-        .active{
-            color: $hover-color;
-        }
-        ul{
-            display: flex;
-           li{
-                margin: 0px 1rem;           
-        a{
-            padding:1rem 0.5rem;
-        }
+.header-container{
+    @include main-header-con;
+    .header-width-col{
+        @include width-margin-cntr;
+        .header{
+            @include flexbox-header;
+            background-color: $background-color;
+             a{
+                color: #fff;
+                transition: 0.5s;
+                &:hover{
+                    color: $hover-color;
+                }
+            }    
+            .nav-col-lft{
+                flex: 4;
+                font-size: 3rem;
+                a{
+                    margin-left:1rem ;
+                }      
             }
-        }       
+            .nav-col-rt{
+                flex: 2;
+                font-size: 1.8rem;
+                .active{
+                    color: $hover-color;
+                }
+                ul{
+                    display: flex;
+                   li{
+                        margin: 0px 1rem;           
+                a{
+                    padding:1rem 0.5rem;
+                }
+                    }
+                }       
+            }
+        }
     }
+    
 }
