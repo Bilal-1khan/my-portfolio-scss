@@ -47,6 +47,9 @@
 .header-container .header-width-col .header .nav-col-rt ul li a {
   padding: 1rem 0.5rem;
 }
+.header-container .header-width-col .header #menu-icon {
+  display: none;
+}
 
 .intro-container {
   background-color: rgb(31, 30, 30);
@@ -485,6 +488,12 @@
   }
   .header #NavRight {
     display: none;
+  }
+  .header #menu-icon {
+    display: inline-flex;
+    color: #fff;
+    font-size: 3rem;
+    flex: 1;
   }
   #project-flex-col {
     padding: 15rem 0.6%;

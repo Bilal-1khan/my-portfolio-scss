@@ -62,6 +62,12 @@
         #NavRight{
             display: none;
         }
+        #menu-icon{
+            display: inline-flex;
+            color: #fff;
+            font-size: 3rem;
+            flex: 1;
+        }
     }
     #project-flex-col{
         padding: 15rem 0.6%;
